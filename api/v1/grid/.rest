@@ -1,6 +1,3 @@
 @url = /api/v1/grid
 
-GET {{host}}{{url}}/random
-###
-
-GET {{host}}{{url}}/time
+GET {{host}}{{url}}/
