@@ -21,10 +21,10 @@ func Serve() {
 	// notify
 	if viper.GetBool("gin.release") {
 		timber.Info(fmt.Sprintf("API: listening on %s (%s)", address, "HTTP"))
+	}
 
-		if err := router.Run(address); err != nil {
-			timber.Error("API:", err)
-		}
+	if err := router.Run(address); err != nil {
+		timber.Error("API:", err)
 	}
 
 	// wait for ^c
